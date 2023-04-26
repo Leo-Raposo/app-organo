@@ -1,36 +1,21 @@
 import './Rodape.css'
 
 const Rodape = () => {
-    return (<footer className="footer">
-        <img src="/imagens/fundo.png" alt="Rodape" className="rodape__imagem" />
-        <section>
-            <ul>
-                <li>
-                    <a href="facebook.com" target="_blank">
-                        <img src="/imagens/fb.png" alt="" />
-                    </a>
-                </li>
-                <li>
-                    <a href="twitter.com" target="_blank">
-                        <img src="/imagens/tw.png" alt="" />
-                    </a>
-                </li>
-                <li>
-                    <a href="instagram.com" target="_blank">
-                        <img src="/imagens/ig.png" alt="" />
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <img src="/imagens/logo.png" alt="" />
-        </section>
-        <section>
-            <p>
-                Desenvolvido por Alura.
-            </p>
-        </section>
-    </footer>)
+    return (
+        <footer>
+            <img src="/imagens/fundo.png" alt="Rodape" className="rodape__imagem" />
+            <div className="icones">
+                <a href="https://facebook.com" target={'_blank'}><img src="/imagens/fb.png" alt="Ícone do Facebook" /></a>
+                <a href="https://twitter.com"><img src="/imagens/tw.png" alt="Ícone do Twitter" /></a>
+                <a href="https://instagram.com"><img src="/imagens/ig.png" alt="Ícone do Instagram" /></a>
+            </div>
+
+            <img src="/imagens/logo.png" alt="Logo do Organo" />
+
+            <p>Desenvolvido por Leonardo Raposo</p>
+
+        </footer>
+    )
 }
 
 export default Rodape
